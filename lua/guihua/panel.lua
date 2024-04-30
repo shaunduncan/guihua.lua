@@ -101,35 +101,36 @@ function Panel:initialize(opts)
   self.icons = {}
   self.icons.panel_icons = opts.panel_icons
     or {
-      section_separator = '─', --'',
-      line_num_left = ':', --'',
-      line_num_right = '', --',
+      section_separator = '─',
+      line_num_left = ':',
+      line_num_right = '',
 
-      range_left = '', --'',
-      range_right = '',
-      inner_node = '', --├○',
-      folded = '◉',
-      unfolded = '○',
+      range_left = '«',
+      range_right = '»',
+      inner_node = '',
+      folded = '+',
+      unfolded = '-',
 
-      outer_node = '', -- '╰○',
-      bracket_left = '', -- ⟪',
-      bracket_right = '', -- '⟫',
+      outer_node = '',
+      bracket_left = '',
+      bracket_right = '',
     }
   panel_icons = self.icons.panel_icons
   self.icons.syntax_icons = opts.syntax_icons
     or {
-      var = ' ', -- "👹", -- Vampaire
-      method = 'ƒ ', --  "🍔", -- mac
-      ['function'] = ' ', -- "🤣", -- Fun
-      ['arrow_function'] = ' ', -- "🤣", -- Fun
-      parameter = '', -- Pi
-      associated = '🤝',
-      namespace = '🚀',
-      type = ' ',
-      field = '🏈',
-      interface = '',
-      module = '📦',
-      flag = '🎏',
+      var = '𝒳 ',
+      method = '  ⨍',
+      ['function'] = '⨍',
+      ['arrow_function'] = '⨍>',
+      parameter = '->',
+      associated = '🔗',
+      namespace = '§',
+      type = '⮻',
+      field = 'arg:',
+      interface = '⮻',
+      module = '▣',
+      flag = '⚑',
+      declaration = '⨍',
     }
   syntax_icons = self.icons.syntax_icons
   -- set_highlights(self.icons)
@@ -144,10 +145,11 @@ end
 
 local genheader = function(opt)
   local sepr = panel_icons.section_separator
-  local width = opt.width or 35
+  local width = opt.width or 20
   local text = opt.header or 'outline'
   local side_size = math.floor((width - #text) / 2)
-  return { string.rep(sepr, side_size) .. text .. string.rep(sepr, side_size) }
+  -- return { string.rep(sepr, side_size) .. text .. string.rep(sepr, side_size) }
+  return { opt.header }
 end
 
 function Panel:add_section(opts)

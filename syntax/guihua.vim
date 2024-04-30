@@ -33,28 +33,28 @@ syntax keyword GuihuaNerdfont     𝔉 ⓕ    ﴲ    ﰮ   
 " ❌
 syntax keyword GuihuaNerdfont2  ƒ          蘒 
 
-hi default link GuihuaBufferNumber Number
-hi default link GuihuaBufferHex Number
-hi default link GuihuaBufferFloat Float
-hi default link GuihuaBufferColon  Operator
-hi default link GuihuaBufferPath   Title
-hi default link GuihuaBufferKeyword Keyword
-hi default link GuihuaBufferString String
-hi default link GuihuaNerdfont Constant
-hi default link GuihuaBufferString2 String
-hi default link GuihuaBufferComment Comment
-hi default link GuihuaBufferCondition Conditional
-hi default link GuihuaBufferType Structure
-hi default link GuihuaBufferLoop Repeat
-hi default link GuihuaBufferClass Type
-hi default link GuihuaBufferField Function
-hi default link GuihuaNerdfont2 Function
-hi default link GuihuaBufferField2 Function
-hi default link GuihuaBufferLogic Boolean
-hi default link GuihuaRange Comment
-hi default link GuihuaPanelLineNr LineNr
-hi default link GuihuaPanelHeader Label
-hi default link GuihuaPanelHeaderText Identifier
+" hi default link GuihuaBufferNumber Number
+" hi default link GuihuaBufferHex Number
+" hi default link GuihuaBufferFloat Float
+" hi default link GuihuaBufferColon  Operator
+" hi default link GuihuaBufferPath   Title
+" hi default link GuihuaBufferKeyword Keyword
+" hi default link GuihuaBufferString String
+" hi default link GuihuaNerdfont Constant
+" hi default link GuihuaBufferString2 String
+" hi default link GuihuaBufferComment Comment
+" hi default link GuihuaBufferCondition Conditional
+" hi default link GuihuaBufferType Structure
+" hi default link GuihuaBufferLoop Repeat
+" hi default link GuihuaBufferClass Type
+" hi default link GuihuaBufferField Function
+" hi default link GuihuaNerdfont2 Function
+" hi default link GuihuaBufferField2 Function
+" hi default link GuihuaBufferLogic Boolean
+" hi default link GuihuaRange Comment
+" hi default link GuihuaPanelLineNr LineNr
+" hi default link GuihuaPanelHeader Label
+" hi default link GuihuaPanelHeaderText Identifier
 " path match
 "  /abc/def_m1/gh_a.lua   :3
 " /abc/defm/gha.lua
